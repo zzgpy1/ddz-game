@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>麻将三缺一 | 在线AI麻将</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/mahjong.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <a href="index.html" class="back-btn">← 返回大厅</a>
+            <h1>🀄 麻将 · 三缺一</h1>
+            <div class="game-status" id="gameStatusDisplay">等待开始</div>
+        </div>
+
+        <div class="game-container">
+            <canvas id="gameCanvas" width="1000" height="600"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="btnStart" class="btn-primary">🎲 发牌 / 新局</button>
+            <button id="btnPeng" class="btn-action">🀆 碰</button>
+            <button id="btnGang" class="btn-action">🀄 杠</button>
+            <button id="btnHu" class="btn-hu">🎉 胡</button>
+            <button id="btnPass" class="btn-secondary">🙅 过</button>
+            <button id="btnDiscard" class="btn-play">🀟 出牌</button>
+        </div>
+
+        <div class="message-area">
+            <div id="statusMessage" class="status-message">✨ 点击【发牌】开始三缺一麻将 ✨</div>
+        </div>
+
+        <div class="rules-hint">
+            💡 玩法：单击手牌选中 → 点【出牌】弃牌 | 出现碰/杠/胡提示时可操作 | AI自动补位
+        </div>
+    </div>
+    <script src="assets/js/mahjong.js"></script>
+</body>
+</html>
