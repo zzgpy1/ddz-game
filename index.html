@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>游戏大厅 | 斗地主 + 麻将三缺一</title>
+    <meta name="description" content="经典棋牌游戏合集：斗地主 + 麻将三缺一，智能AI对手，在线即玩">
+    <meta name="keywords" content="斗地主,麻将三缺一,在线游戏,棋牌游戏,AI对战">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', 'Poppins', 'Microsoft YaHei', system-ui, sans-serif;
+            padding: 20px;
+        }
+
+        .hall-container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .title-section {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .title-section h1 {
+            font-size: 3rem;
+            color: #ffd700;
+            text-shadow: 3px 3px 0 #8b6912;
+            letter-spacing: 4px;
+        }
+
+        .title-section p {
+            color: #c9d1d9;
+            font-size: 1.1rem;
+            margin-top: 12px;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+
+        .game-card {
+            background: linear-gradient(145deg, #2d3748, #1a202c);
+            border-radius: 32px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .game-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-preview {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+            background: linear-gradient(135deg, #3a4a6b, #1e2a3a);
+        }
+
+        .doudizhu-preview {
+            background: linear-gradient(135deg, #2d6a4f, #1b4332);
+        }
+
+        .mahjong-preview {
+            background: linear-gradient(135deg, #c77d3e, #9c5221);
+        }
+
+        .card-info {
+            padding: 24px;
+        }
+
+        .card-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            color: #ffd700;
+        }
+
+        .card-info p {
+            color: #a0aec0;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #2c5282;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #bee3f8;
+        }
+
+        .feature-list {
+            margin-top: 16px;
+            list-style: none;
+        }
+
+        .feature-list li {
+            font-size: 0.85rem;
+            color: #cbd5e0;
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .feature-list li::before {
+            content: "🎮";
+            font-size: 0.8rem;
+        }
+
+        .footer {
+            text-align: center;
+            color: #718096;
+            padding: 24px;
+            border-top: 1px solid #2d3748;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .title-section h1 {
+                font-size: 2rem;
+            }
+            .game-grid {
+                gap: 20px;
+            }
+            .card-info h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hall-container">
+        <div class="title-section">
+            <h1>🃏 棋牌游戏大厅 🀄</h1>
+            <p>选择游戏开始对战 | 智能AI陪玩 | 三缺一等你来</p>
+        </div>
+
+        <div class="game-grid">
+            <!-- 斗地主游戏卡片 -->
+            <a href="doudizhu.html" class="game-card">
+                <div class="card-preview doudizhu-preview">
+                    🃟 🃠 🃊
+                </div>
+                <div class="card-info">
+                    <h2>🔥 斗地主</h2>
+                    <p>经典三人斗地主，智能AI对手，叫地主、炸弹、春天全都有！</p>
+                    <div class="tags">
+                        <span class="tag">策略</span>
+                        <span class="tag">卡牌</span>
+                        <span class="tag">AI对战</span>
+                    </div>
+                    <ul class="feature-list">
+                        <li>三人对战 · 叫地主抢分</li>
+                        <li>支持炸弹、王炸、顺子等全部牌型</li>
+                        <li>智能AI决策系统</li>
+                    </ul>
+                </div>
+            </a>
+
+            <!-- 麻将三缺一游戏卡片 -->
+            <a href="mahjong.html" class="game-card">
+                <div class="card-preview mahjong-preview">
+                    🀄 🀛 🀐 🀆
+                </div>
+                <div class="card-info">
+                    <h2>🀄 麻将三缺一</h2>
+                    <p>经典麻将玩法，碰、杠、胡，三缺一AI陪玩，随时开一桌！</p>
+                    <div class="tags">
+                        <span class="tag">麻将</span>
+                        <span class="tag">三缺一</span>
+                        <span class="tag">AI对战</span>
+                    </div>
+                    <ul class="feature-list">
+                        <li>三人麻将 · 缺一AI补位</li>
+                        <li>支持碰、杠、点炮、自摸</li>
+                        <li>简化规则 · 快速上手</li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+
+        <div class="footer">
+            🎮 点击卡片进入游戏 | 所有游戏均为浏览器本地运行，无需下载
+        </div>
+    </div>
+</body>
+</html>
