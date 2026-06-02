@@ -1,0 +1,12 @@
+/* 斗地主特定样式 */
+.game-container canvas {
+    aspect-ratio: 1000 / 600;
+}
+
+.btn-bid:hover, .btn-action:hover {
+    background: #48bb78;
+}
+
+.btn-play:hover {
+    background: #fc8181;
+}
