@@ -1,0 +1,18 @@
+/* 麻将特定样式 */
+.game-container canvas {
+    aspect-ratio: 1000 / 600;
+    background: linear-gradient(145deg, #2c5e2e, #1e4a2a);
+}
+
+.btn-action:hover {
+    background: #48bb78;
+}
+
+.btn-hu:hover {
+    background: #ecc94b;
+}
+
+/* 麻将牌选中效果 */
+.mahjong-selected {
+    filter: drop-shadow(0 0 8px gold);
+}
