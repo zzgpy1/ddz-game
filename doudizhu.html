@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>斗地主 | 在线AI对战</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/doudizhu.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <a href="index.html" class="back-btn">← 返回大厅</a>
+            <h1>🃏 斗地主</h1>
+            <div class="game-status" id="gameStatusDisplay">等待开始</div>
+        </div>
+
+        <div class="game-container">
+            <canvas id="gameCanvas" width="1000" height="600"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="btnStart" class="btn-primary">🎲 发牌 / 新局</button>
+            <button id="btnPass" class="btn-secondary">🙅 不叫/过</button>
+            <button id="btnBid1" class="btn-bid">⚡ 叫1分</button>
+            <button id="btnBid2" class="btn-bid">⚡ 叫2分</button>
+            <button id="btnBid3" class="btn-bid">🔥 叫3分</button>
+            <button id="btnPlayCards" class="btn-play">🃟 出牌</button>
+        </div>
+
+        <div class="message-area">
+            <div id="statusMessage" class="status-message">✨ 点击【发牌】开始三人斗地主 ✨</div>
+        </div>
+
+        <div class="rules-hint">
+            💡 玩法：单击手牌选中/取消 → 选牌后点【出牌】 | 点【过】跳过回合 | 叫分阶段叫得越高倍数越大
+        </div>
+    </div>
+    <script src="assets/js/doudizhu.js"></script>
+</body>
+</html>
